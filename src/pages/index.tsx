@@ -52,9 +52,9 @@ export default function Home() {
               <h2>{alliance.name}</h2>
               {alliance.factions &&
                 alliance.factions?.map((faction) => (
-                  <div key={'faction_' + faction.factionId} style={{marginLeft: '1rem'}}>
+                  <div key={'faction_' + faction.factionId}>
                     <h3>{faction.name}</h3>
-                    <ul style={{marginLeft: '1rem'}}>
+                    <ul>
                       {faction.units &&
                         faction.units?.map((unit) => (
                           <li key={'unit_' + unit.unitId}>{unit.name}</li>
